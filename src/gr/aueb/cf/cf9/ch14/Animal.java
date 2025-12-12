@@ -1,4 +1,4 @@
-package gr.aueb.cf.ch14;
+package gr.aueb.cf.cf9.ch14;
 
 public class Animal {
 
@@ -30,7 +30,7 @@ public class Animal {
         this.age = age;
     }
 
-    protected void speak() {
+    public void speak() {
         System.out.println("I am an animal");
     }
 
@@ -40,9 +40,5 @@ public class Animal {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
-    }
-
-    public static void doSpeak(Animal animal) {
-        animal.speak();
     }
 }
