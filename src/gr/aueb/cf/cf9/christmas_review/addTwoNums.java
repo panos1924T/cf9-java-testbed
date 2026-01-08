@@ -2,6 +2,11 @@ package gr.aueb.cf.cf9.christmas_review;
 
 import java.util.Scanner;
 
+/**
+ * Γράψτε μια μέθοδο που δέχεται δύο
+ * ακεραίους και επιστρέφει το άθροισμά
+ * τους
+ */
 public class addTwoNums {
 
     public static void main(String[] args) {
