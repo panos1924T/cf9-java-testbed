@@ -18,7 +18,7 @@ package gr.aueb.cf.cf9.christmas_review;
  * Διαφορά:
  * |15 - 17| = 2
  */
-public class diagonalDiff {
+public class DiagonalDiff {
 
     public static void main(String[] args) {
         int[][] array = { {3, 1, 3},

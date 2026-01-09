@@ -14,7 +14,7 @@ import java.util.Arrays;
  *  *
  *  * Επιστροφή: Πίνακας με 2 θέσεις [πόντοι_Alice, πόντοι_Bob]
  *  */
-public class compareTriplets {
+public class CompareTriplets {
 
     public static void main(String[] args) {
         int[] bob = {70, 85, 100};

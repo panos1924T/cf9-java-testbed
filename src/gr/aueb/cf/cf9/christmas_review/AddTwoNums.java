@@ -7,7 +7,7 @@ import java.util.Scanner;
  * ακεραίους και επιστρέφει το άθροισμά
  * τους
  */
-public class addTwoNums {
+public class AddTwoNums {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

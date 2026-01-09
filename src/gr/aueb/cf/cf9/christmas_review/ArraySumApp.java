@@ -5,7 +5,7 @@ package gr.aueb.cf.cf9.christmas_review;
  * Να υπολογιστεί το άθροισμα των στοιχείων
  * του.
  */
-public class arraySumApp {
+public class ArraySumApp {
 
     public static void main(String[] args) {
         int[] arr = {3, 5, 20, 3};
