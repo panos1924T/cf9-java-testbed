@@ -8,5 +8,13 @@ public class Main {
 
         obj1.speak();
         obj2.speak();
+
+        GenericSpeakingSchool catSchool = new GenericSpeakingSchool(obj1);
+        GenericSpeakingSchool dogSchool = new GenericSpeakingSchool(obj2);
+
+        catSchool.learn();
+        dogSchool.learn();
+
+
     }
 }
