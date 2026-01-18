@@ -15,6 +15,21 @@ public class Main {
         catSchool.learn();
         dogSchool.learn();
 
+        Item a = new Book();
+        Item b = new CD();
 
+        deliver(a);
+        deliver(b);
+    }
+
+    public static void deliver(Item item) {
+
+        if (item instanceof Book) {
+            System.out.println("Book delivered");
+        } else if (item instanceof CD) {
+            System.out.println("CD delivered");
+        } else {
+            System.out.println("Unknown object");
+        }
     }
 }
