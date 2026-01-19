@@ -19,7 +19,15 @@ public class Main {
                 .build();
 
 
-        System.out.println(newBook);
-        System.out.println(newerBook);
+//        System.out.println(newBook);
+//        System.out.println(newerBook);
+
+        runTheTask((s) -> System.out.println("Greeting: " + s));
+
+        runTheTask(System.out::println);
+    }
+
+    public static void runTheTask(IFunctional functional) {
+        functional.doIt("Hello");
     }
 }
