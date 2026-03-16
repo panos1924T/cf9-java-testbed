@@ -68,4 +68,25 @@ public class Account {
             throw e;
         }
     }
+
+    /**
+     *  first it checks if the ssn is correct to allow withdrawal
+     *  this method allows the user to withdraw money from the account
+     * @param amount        the amount the user withdraws
+     * @throws Exception    insufficient if amount > balance
+     */
+    public void withdraw(double amount, String ssn) throws Exception{
+        try {
+            if (!isSsnValid(ssn)) throw new Exception("Invalid ssn exception");
+            if (amount > balance) throw new Exception("Insufficient balance exception");
+            balance -= amount;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw e;
+        }
+    }
+
+    public boolean isSsnValid(String ssn) {
+        return this.ssn.equals(ssn);
+    }
 }
