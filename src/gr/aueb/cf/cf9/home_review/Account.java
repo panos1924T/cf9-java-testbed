@@ -37,11 +37,11 @@ public class Account {
         this.ssn = ssn;
     }
 
-    public BigDecimal getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public void setBalance(BigDecimal balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 
@@ -88,5 +88,9 @@ public class Account {
 
     public boolean isSsnValid(String ssn) {
         return this.ssn.equals(ssn);
+    }
+
+    public double getAccountBalance() {
+        return getBalance();
     }
 }
