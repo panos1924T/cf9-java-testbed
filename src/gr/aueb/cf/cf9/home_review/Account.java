@@ -45,6 +45,9 @@ public class Account {
         this.balance = balance;
     }
 
+    /**
+     * @return returns the account state in a string as an output
+     */
     public String accountToString() {
         return "(Iban: " + iban + "Ssn: " + ssn + "Balance: " + balance + ")";
     }
