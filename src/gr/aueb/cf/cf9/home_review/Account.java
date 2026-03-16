@@ -86,7 +86,7 @@ public class Account {
         }
     }
 
-    public boolean isSsnValid(String ssn) {
+    private boolean isSsnValid(String ssn) {
         return this.ssn.equals(ssn);
     }
 
