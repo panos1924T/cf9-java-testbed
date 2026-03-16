@@ -11,7 +11,7 @@ public class Account {
     private int id;
     private String iban;
     private String ssn;
-    private BigDecimal balance;
+    private double balance;
 
     public int getId() {
         return id;
@@ -50,5 +50,22 @@ public class Account {
      */
     public String accountToString() {
         return "(Iban: " + iban + "Ssn: " + ssn + "Balance: " + balance + ")";
+    }
+
+    /**
+     * this method is part of the public API
+     * and allows the client to do a deposit
+     *
+     * @param amount        the amount the client deposits
+     * @throws Exception    negative amount exception if amount < 0
+     */
+    public void deposit(double amount) throws Exception{
+        try {
+            if (amount < 0) throw new Exception("Negative amount Exception! ");
+            balance += amount;
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw e;
+        }
     }
 }
