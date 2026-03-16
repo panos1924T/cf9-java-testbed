@@ -17,6 +17,13 @@ public class Account {
         return id;
     }
 
+    public Account(int id, String iban, String ssn, double balance) {
+        this.id = id;
+        this.iban = iban;
+        this.ssn = ssn;
+        this.balance = balance;
+    }
+
     public void setId(int id) {
         this.id = id;
     }
