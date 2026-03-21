@@ -1,6 +1,10 @@
 package gr.aueb.cf.cf9.home_review;
 
 
+import gr.aueb.cf.cf9.fromclass.exceptions.NegativeAmountException;
+import gr.aueb.cf.cf9.home_review.exceptions.InsufficientBalanceException;
+import gr.aueb.cf.cf9.home_review.exceptions.SsnNotValidException;
+
 import java.math.BigDecimal;
 
 /**
@@ -68,7 +72,7 @@ public class Account {
      */
     public void deposit(double amount) throws Exception{
         try {
-            if (amount < 0) throw new Exception("Negative amount Exception! ");
+            if (amount < 0) throw new NegativeAmountException("Negative amount Exception! ");
             balance += amount;
         } catch (Exception e) {
             e.printStackTrace();
@@ -84,8 +88,8 @@ public class Account {
      */
     public void withdraw(double amount, String ssn) throws Exception{
         try {
-            if (!isSsnValid(ssn)) throw new Exception("Invalid ssn exception");
-            if (amount > balance) throw new Exception("Insufficient balance exception");
+            if (!isSsnValid(ssn)) throw new SsnNotValidException("Invalid ssn exception");
+            if (amount > balance) throw new InsufficientBalanceException("Insufficient balance exception");
             balance -= amount;
         } catch (Exception e) {
             e.printStackTrace();
