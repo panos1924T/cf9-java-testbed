@@ -5,5 +5,5 @@ package gr.aueb.cf.cf9.home_review.interfaces;
  */
 public interface ILine {
 
-    void drawLine();
+    void drawLine(int length);
 }
