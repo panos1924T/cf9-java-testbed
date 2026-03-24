@@ -1,4 +1,4 @@
-package gr.aueb.cf.cf9.home_review;
+package gr.aueb.cf.cf9.home_review.interfaces;
 
 /**
  * interface for drawing a line
