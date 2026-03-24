@@ -1,7 +1,4 @@
-package gr.aueb.cf.cf9.home_review.exceptions;
-
-import gr.aueb.cf.cf9.home_review.AbstractLine;
-import gr.aueb.cf.cf9.home_review.ILine;
+package gr.aueb.cf.cf9.home_review;
 
 
 /**
