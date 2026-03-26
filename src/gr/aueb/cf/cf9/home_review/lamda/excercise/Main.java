@@ -12,7 +12,16 @@ public class Main {
         items.add(new Photo());
         items.add("Default");
 
+        Thread thread = new Thread(() -> {
+            for (Object obj : items) {
+                if (obj instanceof Printable printable) {
+                    Runnable action = printable::print;
+                    action.run();
+                }
+            }
+        });
 
+        thread.start();
     }
 
 }
